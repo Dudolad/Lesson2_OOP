@@ -16,7 +16,7 @@ public:
 
 	void setTitle(const char* title);
 	void setType(const char* type);
-	void setPrice(const char* price);
+	void setPrice(float price);
 
 	const char* getTitle()const;
 	const char* getType()const;
