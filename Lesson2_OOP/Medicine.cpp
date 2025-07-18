@@ -20,6 +20,21 @@ Medicine::Medicine(const char* title, const char* type, float price)
 	m_price = price;
 }
 
+Medicine::Medicine(const Medicine& obj)
+{
+	// Medicine b = a; => this = obj
+	int size_title = strlen(obj.m_title) + 1;
+	this->m_title = new char[size_title];
+	strcpy_s(this->m_title, size_title, obj.m_title);
+
+	int size_type = strlen(obj.m_type) + 1;
+	this->m_type = new char[size_type];
+	strcpy_s(this->m_type, size_type, obj.m_type);
+
+	this->m_price = obj.m_price;
+
+}
+
 Medicine::~Medicine()
 {
 	delete[] m_title;
