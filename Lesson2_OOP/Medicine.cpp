@@ -35,6 +35,11 @@ Medicine::Medicine(const Medicine& obj)
 
 }
 
+Medicine& Medicine::operator=(const Medicine& obj)
+{
+	
+}
+
 Medicine::~Medicine()
 {
 	delete[] m_title;

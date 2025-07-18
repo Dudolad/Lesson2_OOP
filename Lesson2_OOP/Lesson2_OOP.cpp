@@ -14,6 +14,13 @@ int main()
     b.showInfo();
 
     a.showInfo();
+    cout << "--------------------\n";
+    Medicine c("Nurofen", "syrope", 199.99);
+
+    a = c;
+
+    c.showInfo();
+    a.showInfo();
 
     return 0;
 }

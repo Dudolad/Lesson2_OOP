@@ -12,7 +12,8 @@ private:
 public:
 	Medicine();
 	Medicine(const char* title, const char* type, float price);
-	Medicine(const Medicine& obj); // Medicine b = a; => this = obj
+	Medicine(const Medicine& obj); //Copy constructor,  Medicine b = a; => this = obj
+	Medicine& operator = (const Medicine& obj); //Operator =,   c = a,   =>   this = obj
 	~Medicine();
 
 	void setTitle(const char* title);
