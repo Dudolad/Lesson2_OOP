@@ -1,10 +1,11 @@
 #include <iostream>
 #include "Medicine.h"
+#include "Pharm.h"
 using namespace std;
 
 int main()
 {
-    Medicine a("Aspiryn", "pills", 20.99);
+    /*Medicine a("Aspiryn", "pills", 20.99);
     a.showInfo();
     cout << endl;
 
@@ -20,7 +21,11 @@ int main()
     a = c;
 
     c.showInfo();
-    a.showInfo();
+    a.showInfo();*/
+
+    Pharm anc("ANC");
+
+    anc.showInfo();
 
     return 0;
 }

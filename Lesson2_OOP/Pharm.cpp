@@ -19,8 +19,8 @@ Pharm::Pharm(const char* name)
 	m_arr = new Medicine[3];
 
 	m_arr[0] = Medicine("Aspiryn", "pills", 20.50);
-	m_arr[0] = Medicine("Nurofen", "syrope", 200.55);
-	m_arr[0] = Medicine("Doctor Mom", "syrope", 150.90);
+	m_arr[1] = Medicine("Nurofen", "syrope", 200.55);
+	m_arr[2] = Medicine("Doctor Mom", "syrope", 150.90);
 }
 
 Pharm::~Pharm()
@@ -39,4 +39,12 @@ void Pharm::showInfo() const
 		cout << endl;
 	}
 
+}
+
+void Pharm::addMedicine(Medicine obj)
+{
+}
+
+void Pharm::sort_by_price()
+{
 }
