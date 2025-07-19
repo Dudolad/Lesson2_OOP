@@ -43,8 +43,12 @@ void Pharm::showInfo() const
 
 void Pharm::addMedicine(Medicine obj)
 {
+	addItemBack(m_arr, m_size_medicines, obj);
 }
 
 void Pharm::sort_by_price()
 {
+	sort_if<Medicine>(m_arr, m_size_medicines, [](Medicine left, Medicine right) {
+		return left.getPrice() < right.getPrice();
+	});
 }
